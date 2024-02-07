@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout Template</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Checkout Template</h1>
+
+        <nav>
+            <a href="index.html#interactive_elements">Interactive Elements</a>
+            <a href="index.html#text_elements">Text Elements</a>
+            <a href="index.html#combined_elements">Combined Elements</a>
+            <a href="product_listing.html">Product/Service Listing</a>
+            <a href="checkout.html">Checkout Template</a>
+            <a href="index.html#citations">Citations</a>
+        </nav>
+
+    </header>
+
+    <!-- CHECKOUT CART -->
+    <section id="checkout-cart">
+        <h5>Checkout Cart</h5>
+
+        <div class="checkout-cart">
+            <div class="cart-item">
+                <h2>Portrait Photography Service</h2>
+                <img src="img/photo2.webp" alt="Portrait Service">
+                <p>Price: $59.99</p>
+            </div>
+
+            <div class="cart-item">
+                <h2>Events Photography Service</h2>
+                <img src="img/photo3.webp" alt="Events Service">
+                <p>Price: $199.99</p>
+            </div>
+
+            <div class="cart-total">
+                <h3>Cart Total: $259.98</h3>
+            </div>
+
+            <div>
+                <a class="button2-nav" href="#">Checkout</a>
+            </div>
+        </div>
+    </section>
+    <!-- CHECKOUT CART -->
+
+    <h5>Checkout Payment</h5>
+    <!-- CHECKOUT PAYMENT -->
+    <section id="checkout-payment">
+        <h1>Checkout Form</h1>
+
+        <div>
+            <label for="card-num">Card Number:</label>
+            <input type="text" id="card-num" name="card-num" required>
+        </div>
+
+        <div>
+            <label for="expiry-date">Expiry Date:</label>
+            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+        </div>
+
+        <div>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required>
+        </div>
+
+        <div>
+            <input type="radio" id="credit-card" name="pay-method" value="credit-card" checked>
+            <label for="credit-card">Card</label>
+        </div>
+
+        <div>
+            <input type="radio" id="apple" name="pay-method" value="apple">
+            <label for="apple">Apple Pay</label>
+        </div>
+
+        <div>
+            <a class="button3-nav" href="#">Submit</a>
+        </div>
+    </section>
+    <!-- // CHECKOUT PAYMENT -->
+
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+/* Body Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto Medium', sans-serif;
+}
+
+/* Element Styles */
+.element {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  border-top: 0.3rem solid rgb(40, 2, 90);
+}
+
+/* Heading Styles */
+h1 {
+  font-family: 'Roboto Bold', sans-serif;
+  font-size: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: 'Roboto Medium', sans-serif;
+  color: rgb(59, 7, 102);
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+h3 {  
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+h4 {
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Style Guide Template Heading */
+h5 {
+  padding-left: 2rem;
+  color: rgb(105, 17, 177);
+  font-size: 2.25rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph Styles */
+p {
+  margin-top: 0;
+  font-family: 'Roboto Regular', sans-serif;
+}
+
+/* Code Styles */
+code {
+  background-color: #EEE;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* Navigation Button Styles */
+.button-nav,
+.button2-nav,
+.button3-nav {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+}
+
+.button-nav {
+  padding: 0.5rem;
+  background-color: rgb(50, 50, 50);
+}
+
+.button2-nav {
+  padding: 0.7rem;
+  background-color: rgb(103, 24, 163);
+}
+
+.button3-nav {
+  padding: 0.8rem;
+  background-color: rgb(71, 15, 168);
+}
+
+.button-nav:hover, .button-nav:focus,
+.button2-nav:hover, .button2-nav:focus,
+.button3-nav:hover, .button3-nav:focus {
+  background-color: rgb(200, 200, 200);
+}
+
+/* Hover Style for Images as Links */
+a img:hover { 
+  opacity: 0.5; 
+}
+
+/* Element Image Styles */
+.element img {
+  width: 35%; 
+}
+
+/* Header and Nav Styles */
+header {
+  background-color: #27064f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  width: 100%;
+  background-color: #27064f; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+}
+
+nav a:hover {
+  opacity: 0.5; 
+}
+
+/* Hyperlink Styles */
+a {
+  color: #27064f;
+  font-family: 'Roboto Medium', sans-serif;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.5; 
+}
+
+/* Checkout Cart Styles */
+.checkout-cart {
+  padding: 1rem;
+}
+
+.checkout-cart .cart-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-cart .cart-item img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.checkout-cart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkout-cart p {
+  margin: 0;
+  font-family: 'Roboto Regular', sans-serif;
+}
+
+.checkout-cart .cart-total {
+  border-top: 2px solid #27064f;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+/* Checkout Payment Form */
+#checkout-payment {
+  max-width: 400px; 
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+#checkout-payment h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  color: rgb(59, 7, 102);
+  margin-bottom: 25px;
+}
+
+#checkout-payment div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+/* Product/Service Listing Styles */
+#product_listing {
+  padding: 2rem;
+}
+
+.service-list {
+  display: flex;
+}
+
+.service-item {
+  width: 300px;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.service-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.service-item h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.service-item h3 {
+  color: #27064f;
+  margin-bottom: 0.5rem;
+}
+
+.service-item a {
+  display: block; 
+  margin-top: 1.5rem;
+  text-align: center; 
+  background-color: #27064f;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 0.3rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Potential Imagery Section */
+.element figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.element figure img {
+  width: 70%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.element figcaption {
+  font-family: 'Roboto Medium', sans-serif;
+  color: rgb(59, 7, 102);
+  font-size: 1.5rem;
+}
+
+/* MORE DETAILS SECTION */
+#more_details {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.service-details img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+
+
+

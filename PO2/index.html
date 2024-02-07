@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P01 - Style Guide Template</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css">
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Photography Services Style Guide</h1>
+
+    <nav>
+      <a href="#interactive_elements">Interactive Elements</a>
+      <a href="#text_elements">Text Elements</a>
+      <a href="#combined_elements">Combined Elements</a>
+      <a href="product_listing.html">Product Listing Template</a>
+      <a href="checkout.html">Checkout Template</a>
+      <a href="#citations">Citations</a>
+    </nav>
+
+  </header>
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h5>Interactive Elements</h5>
+
+    <section class="element">
+      <h3>In-text link</h3>
+
+      <a href="https://www.pexels.com/photo/women-s-white-framed-sunglasses-2690323/" target="_blank">Neon Woman</a>
+      <h4>Sample code:</h4>
+      <code>&lt;a href="pasteURL" target="_blank"&gt;websiteName&lt;/a&gt;</code>
+
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+      <h3>Navigation Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button-nav</p>
+      <p>.button2-nav</p>
+      <p>.button3-nav</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <a class="button-nav" href="#">Default Button</a>
+      <a class="button2-nav" href="#">Checkout Button</a>
+      <a class="button3-nav" href="#">Submit Button</a>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button"&gt;Submit&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <a class="button3-nav" href="#">Submit</a>
+
+    </section>
+
+
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+
+      <label for="form-text">Textbox:</label>
+      <input type="text" id="form-text" placeholder="Input Text Here">
+
+    </section>
+
+
+    <section class="element">
+      <h3>Radio Button with Label</h3>
+      <p>Select type of service:</p>
+      <input type="radio" id="service1" name="service" value="Portrait">
+      <label for="service1">Portrait Photography</label><br>
+      <input type="radio" id="service2" name="service" value="Events">
+      <label for="service2">Events Photography</label>
+    </section>
+
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+
+      <a href="https://www.pexels.com/photo/women-s-white-framed-sunglasses-2690323/"><img src="img/photo2.webp"
+          alt="Neon Woman"></a>
+      <code>&lt;a href="websiteURL"&gt;&lt;img src="image.jpeg" alt="Image"&gt;&lt;/a&gt;</code>
+
+    </section>
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h5>Text Elements</h5>
+
+    <section class="element">
+      <h3>Headings</h3>
+
+      <h1>Elevate Nightlife Memories with Style</h1>
+      <h2>Immerse in Exceptional Nightclub Photography</h2>
+      <h3>Step into the world of vibrant nightlife captured through our lens. Discover a mission founded on
+        transparency,
+        integrity, and unwavering dedication to customer satisfaction.</h3>
+      <h4>Contact us today to transform your nightclub moments into captivating visuals. Let's collaborate and bring
+        your
+        unique visions to life with our expertise.</h4>
+
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+      <p>
+        Immerse yourself in the electrifying world of nightlife through our specialized photography services.
+        Elevate your memories as we capture the pulsating energy of vibrant events and the distinctive personalities
+        in captivating portraits. Our team of skilled photographers combines creativity and technical expertise to
+        transform every moment into a timeless visual story. Let us redefine your nightlife experiences, turning
+        ordinary
+        scenes into extraordinary and unforgettable memories.
+      </p>
+
+      <code>
+          &lt;p&gt;
+            Type paragraph here
+          &lt;/p&gt;
+        </code>
+
+    </section>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+
+      <code>
+          &lt;ol&gt;
+            &lt;li&gt;First item&lt;/li&gt;
+            &lt;li&gt;Second item&lt;/li&gt;
+            &lt;li&gt;Third item&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h5>Combined Elements</h5>
+
+    <section class="element">
+      <h3>Main Navigation</h3>
+
+      <nav>
+        <a href="#">Shop</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+    </section>
+
+    <section class="element">
+      <h3>Product/Service Listing</h3>
+
+      <div class="service-list">
+        <!-- Service Item 1 -->
+        <div class="service-item">
+          <h2>Events Photography</h2>
+          <img src="img/photo2.jpeg" alt="Events">
+          <h3>Starting at $199.99</h3>
+          <p>Capture the energy of your events with our professional photography services.</p>
+          <a href="#">More Details</a>
+        </div>
+
+        <!-- Service Item 2 -->
+        <div class="service-item">
+          <h2>Portrait Photography</h2>
+          <img src="img/photo2.webp" alt="Portrait">
+          <h3>Starting at $59.99</h3>
+          <p>Illuminate your nightlife with portraits capturing the essence of the scene.</p>
+          <a href="#">More Details</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="element">
+      <h3>Payment Form</h3>
+
+      <section id="checkout-payment">
+        <h1>Checkout Form</h1>
+
+        <div>
+          <label for="card-num">Card Number:</label>
+          <input type="text" id="card-num" name="card-num" required>
+        </div>
+
+        <div>
+          <label for="expiry-date">Expiry Date:</label>
+          <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+        </div>
+
+        <div>
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" required>
+        </div>
+
+        <div>
+          <input type="radio" id="credit-card" name="pay-method" value="credit-card" checked>
+          <label for="credit-card">Card</label>
+        </div>
+
+        <div>
+          <input type="radio" id="apple" name="pay-method" value="apple">
+          <label for="apple">Apple Pay</label>
+        </div>
+
+        <div>
+          <a class="button3-nav" href="#">Submit</a>
+        </div>
+      </section>
+
+    </section>
+
+    <section class="element">
+      <h3>Checkout Cart</h3>
+
+      <div class="checkout-cart">
+        <div class="cart-item">
+          <h2>Portrait Photography Service</h2>
+          <img src="img/photo2.webp" alt="Portrait Service">
+          <p>Price: $59.99</p>
+        </div>
+
+        <div class="cart-item">
+          <h2>Events Photography Service</h2>
+          <img src="img/photo3.webp" alt="Events Service">
+          <p>Price: $199.99</p>
+        </div>
+
+        <div class="cart-total">
+          <h3>Cart Total: $259.98</h3>
+        </div>
+
+        <div>
+          <a class="button2-nav" href="#">Checkout</a>
+        </div>
+      </div>
+
+    </section>
+
+  </section>
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  <!-- BASIC BRANDING IDEAS // -->
+  <section id="branding">
+    <h5>Basic Branding Ideas</h5>
+
+    <section class="element">
+      <h3>What does the company do, or offer?</h3>
+      <p>
+        The company offers photography services, including portrait photography and events photography.
+        Additionally, the company sells printed photos of its work.
+      </p>
+    </section>
+
+    <section class="element">
+      <h3>Who is the company to potential customers? (as a person)</h3>
+      <p>
+        As a person, the company is a professional photographer dedicated to offer high-quality services to clients.
+        Our clients are individuals looking for high-quality photography services. They want a skilled professional to
+        provide exceptional work.
+      </p>
+    </section>
+
+    <section class="element">
+      <h3>Why might this company entice someone to purchase a product or service?</h3>
+      <p>
+        This company is committed to provide tailored professional photography services to meet all of their client's
+        needs.
+        The availibility of printed photos also allows clients to own and cherish their captured moments.
+      </p>
+    </section>
+
+  </section>
+  <!-- BASIC BRANDING IDEAS // -->
+
+
+  <!-- Brand Components // -->
+  <section id="brand-components">
+    <h5>Brand Components</h5>
+
+    <section class="element">
+      <h3>Fonts</h3>
+
+      <h1>Heading 1 - Roboto Bold</h1>
+      <h1>Capture Moments with Excellence</h1>
+
+      <h2>Heading 2 - Roboto Medium</h2>
+      <h2>Explore Our Diverse Services</h2>
+
+      <h3>Heading 3 - Roboto Regular</h3>
+      <h3>Embark on a journey with us. Learn about our mission and values, built on principles of transparency,
+        integrity, and unwavering customer satisfaction.</h3>
+
+      <h4>Heading 4 - Roboto Medium</h4>
+      <h4>Contact us today and let's turn your ideas into captivating visuals. We eagerly anticipate the opportunity to
+        collaborate and bring your visions to life.</h4>
+
+    </section>
+
+    <section class="element">
+      <h3>Colour Palettes</h3>
+      <p>
+        A combination of dark colours, complemented by accents of white for an overall modern and clean professional
+        theme.
+      </p>
+
+      <img src="img/colour.png" alt="The colour.">
+      <h4>HEX: 000000 (RGB: 0, 0, 0)</h4>
+      <h4>HEX: 150050 (RGB: 21, 0, 80)</h4>
+      <h4>HEX: 3F0071 (RGB: 63, 0, 113)</h4>
+      <h4>HEX: 610094 (RGB: 97, 0, 148)</h4>
+    </section>
+
+
+    <section class="element">
+      <h3>Potential imagery, and, or, art direction</h3>
+      <p>
+        The imagery on the webpage will showcase a portfolio for the offered services, highlighting the company's range
+        of creative expertise.
+      </p>
+
+      <figure>
+        <img src="img/club1.jpg" alt="An events shot.">
+        <figcaption>Dynamic Atmosphere</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="img/club2.jpg" alt="An events shot.">
+        <figcaption>Energetic Crowd</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="img/club3.jpg" alt="An events shot.">
+        <figcaption>Excitement Unleashed</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="img/club4.jpg" alt="An events shot.">
+        <figcaption>Lively Moments</figcaption>
+      </figure>
+      
+    </section>
+
+
+  </section>
+  <!-- BASIC BRANDING IDEAS // -->
+
+  <section id="citations">
+
+    <h5>Citations</h5>
+    <section class="element">
+      <h4>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a
+          href="Your_URL_here">Your_URL_here</a></h4>
+  
+      <ul>
+        <li>Christian Robertson. Designer. (Year). <strong>Roboto Font [Font]</strong>. Retrieved from <a
+            href="https://fonts.google.com/specimen/Roboto">https://fonts.google.com/specimen/Roboto</a>
+        </li>
+        <li>Martin Lopez. Photographer. 2019. <strong>Women Taking Photo [Image]</strong>. Retrieved from <a
+            href="https://www.pexels.com/photo/women-taking-photo-2240763/">https://www.pexels.com/photo/women-taking-photo-2240763/</a>
+        </li>
+        <li>Caroline Cagnin. Photographer. 2018. <strong>Red and Blue Led Signage Turned on [Image]</strong>. Retrieved from <a
+            href="https://www.pexels.com/photo/red-and-blue-led-signage-turned-on-1860668/">https://www.pexels.com/photo/red-and-blue-led-signage-turned-on-1860668/</a>
+        </li>
+        <li>Nicholas Derio Palacios. Photographer. 2023. <strong>Female DJ in a Pink Light [Image]</strong>. Retrieved from <a
+            href="https://www.pexels.com/photo/female-dj-in-a-pink-light-19556998/">https://www.pexels.com/photo/female-dj-in-a-pink-light-19556998/</a>
+        </li>
+        <li>Yuri Manei. Photographer. 2019. <strong>Women's White Framed Sunglasses [Image]</strong>. Retrieved from <a
+            href="https://www.pexels.com/photo/women-s-white-framed-sunglasses-2690323/">https://www.pexels.com/photo/women-s-white-framed-sunglasses-2690323/</a>
+        </li>
+        <li>Wendy Wei. Photographer. 2018. <strong>Purple Fireworks Effect [Image]</strong>. Retrieved from <a
+            href="https://www.pexels.com/photo/purple-fireworks-effect-1190298/">https://www.pexels.com/photo/purple-fireworks-effect-1190298/</a>
+        </li>
+        <li>Joni Bologna. (Year). <strong>Flexbox Cheatsheet [Web Resource]</strong>. Retrieved from <a
+            href="http://jonibologna.com/flexbox-cheatsheet/">http://jonibologna.com/flexbox-cheatsheet/</a>
+        </li>
+        <li>W3Schools. 2014. <strong>CSS Tutorial [Web Resource]</strong>. Retrieved from <a
+            href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a>
+        </li>
+        <li>mdn_. (Year). <strong>Styling web forms [Web Resource]</strong>. Retrieved from <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms">https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms</a>
+        </li>
+      </ul>
+    </section>
+  
+  </section>
+  
+
+</body>
+
+</html>
