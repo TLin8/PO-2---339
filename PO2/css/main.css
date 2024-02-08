@@ -196,6 +196,32 @@ a:focus {
   margin-bottom: 15px;
 }
 
+.personal-info {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.personal-info div {
+  flex: 1 1 160px;
+}
+
+.billing-info {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.billing-info div {
+  flex: 1 1 160px;
+}
+
+/* Removing styling from children */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/all */
+.payment-type label, input[type="radio"] {
+  all: revert;
+}
+
 label {
   display: block;
   margin-bottom: 8px;
