@@ -313,6 +313,57 @@ input {
   margin-bottom: 0.5rem;
 }
 
+/* CONTACT US SECTION */
+.contact-us {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
 
+.contact-us h2 {
+  text-align: center;
+}
 
+.input-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group input,
+#subject,
+#message {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.input-group input[type="text"] {
+  margin-right: 10px;
+}
+
+.input-group input[type="email"] {
+  margin-left: 10px; 
+}
+
+#message {
+  height: 200px;
+  resize: none;
+}
+
+.contact-us button {
+  width: 100%;
+  padding: 12px;
+  background-color: #27064f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-us button:hover {
+  opacity: 0.5; 
+}
 
