@@ -201,70 +201,108 @@
       </div>
     </section>
 
-    <section class="element">
-      <h3>Payment Form</h3>
+    <!-- CHECKOUT PAYMENT -->
+    <section id="checkout-payment">
+      <h1>Payment Info</h1>
 
-      <section id="checkout-payment">
-        <h1>Checkout Form</h1>
+      <h3>Customer Info</h3>
+
+      <div class="personal-info">
+        <div>
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
 
         <div>
-          <label for="card-num">Card Number:</label>
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+      </div>
+
+      <h3>Contact Info</h3>
+
+      <div class="personal-info">
+        <div>
+          <label for="phone-num">Phone number</label>
+          <input type="tel" id="phone-num" name="phone-num" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <h3>Billing Info</h3>
+
+      <div class="billing-info">
+        <div>
+          <label for="card-name">Cardholder name</label>
+          <input type="text" id="card-name" name="card-name" placeholder="John Smith" required>
+        </div>
+
+        <div>
+          <label for="card-num">Card number</label>
           <input type="text" id="card-num" name="card-num" required>
         </div>
 
         <div>
-          <label for="expiry-date">Expiry Date:</label>
+          <label for="expiry-date">Expiry date</label>
           <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
         </div>
 
         <div>
-          <label for="cvv">CVV:</label>
+          <label for="cvv">CVV</label>
           <input type="text" id="cvv" name="cvv" required>
-        </div>
-
-        <div>
-          <input type="radio" id="credit-card" name="pay-method" value="credit-card" checked>
-          <label for="credit-card">Card</label>
-        </div>
-
-        <div>
-          <input type="radio" id="apple" name="pay-method" value="apple">
-          <label for="apple">Apple Pay</label>
-        </div>
-
-        <div>
-          <a class="button3-nav" href="#">Submit</a>
-        </div>
-      </section>
-
-    </section>
-
-    <section class="element">
-      <h3>Checkout Cart</h3>
-
-      <div class="checkout-cart">
-        <div class="cart-item">
-          <h2>Portrait Photography Service</h2>
-          <img src="img/photo2.webp" alt="Portrait Service">
-          <p>Price: $59.99</p>
-        </div>
-
-        <div class="cart-item">
-          <h2>Events Photography Service</h2>
-          <img src="img/photo3.webp" alt="Events Service">
-          <p>Price: $199.99</p>
-        </div>
-
-        <div class="cart-total">
-          <h3>Cart Total: $259.98</h3>
-        </div>
-
-        <div>
-          <a class="button2-nav" href="#">Checkout</a>
         </div>
       </div>
 
+      <div class="payment-type">
+        <div>
+          <label for="credit-card">Card</label>
+          <input type="radio" id="credit-card" name="pay-method" value="credit-card" checked>
+        </div>
+
+        <div>
+          <label for="apple">Apple Pay</label>
+          <input type="radio" id="apple" name="pay-method" value="apple">
+        </div>
+      </div>
+
+      <div>
+        <a class="button3-nav" href="#">Submit</a>
+      </div>
     </section>
+    <!-- // CHECKOUT PAYMENT -->
+
+  </section>
+
+  <section class="element">
+    <h3>Checkout Cart</h3>
+
+    <div class="checkout-cart">
+      <div class="cart-item">
+        <h2>Portrait Photography Service</h2>
+        <img src="img/photo2.webp" alt="Portrait Service">
+        <p>Price: $59.99</p>
+      </div>
+
+      <div class="cart-item">
+        <h2>Events Photography Service</h2>
+        <img src="img/photo3.webp" alt="Events Service">
+        <p>Price: $199.99</p>
+      </div>
+
+      <div class="cart-total">
+        <h3>Cart Total: $259.98</h3>
+      </div>
+
+      <div>
+        <a class="button2-nav" href="#">Checkout</a>
+      </div>
+    </div>
+
+  </section>
 
   </section>
   <!-- // COMBINED ELEMENTS SECTION -->
@@ -353,22 +391,22 @@
         <img src="img/club1.jpg" alt="An events shot.">
         <figcaption>Dynamic Atmosphere</figcaption>
       </figure>
-      
+
       <figure>
         <img src="img/club2.jpg" alt="An events shot.">
         <figcaption>Energetic Crowd</figcaption>
       </figure>
-      
+
       <figure>
         <img src="img/club3.jpg" alt="An events shot.">
         <figcaption>Excitement Unleashed</figcaption>
       </figure>
-      
+
       <figure>
         <img src="img/club4.jpg" alt="An events shot.">
         <figcaption>Lively Moments</figcaption>
       </figure>
-      
+
     </section>
 
 
@@ -381,7 +419,7 @@
     <section class="element">
       <h4>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a
           href="Your_URL_here">Your_URL_here</a></h4>
-  
+
       <ul>
         <li>Christian Robertson. Designer. (Year). <strong>Roboto Font [Font]</strong>. Retrieved from <a
             href="https://fonts.google.com/specimen/Roboto">https://fonts.google.com/specimen/Roboto</a>
@@ -389,10 +427,12 @@
         <li>Martin Lopez. Photographer. 2019. <strong>Women Taking Photo [Image]</strong>. Retrieved from <a
             href="https://www.pexels.com/photo/women-taking-photo-2240763/">https://www.pexels.com/photo/women-taking-photo-2240763/</a>
         </li>
-        <li>Caroline Cagnin. Photographer. 2018. <strong>Red and Blue Led Signage Turned on [Image]</strong>. Retrieved from <a
+        <li>Caroline Cagnin. Photographer. 2018. <strong>Red and Blue Led Signage Turned on [Image]</strong>. Retrieved
+          from <a
             href="https://www.pexels.com/photo/red-and-blue-led-signage-turned-on-1860668/">https://www.pexels.com/photo/red-and-blue-led-signage-turned-on-1860668/</a>
         </li>
-        <li>Nicholas Derio Palacios. Photographer. 2023. <strong>Female DJ in a Pink Light [Image]</strong>. Retrieved from <a
+        <li>Nicholas Derio Palacios. Photographer. 2023. <strong>Female DJ in a Pink Light [Image]</strong>. Retrieved
+          from <a
             href="https://www.pexels.com/photo/female-dj-in-a-pink-light-19556998/">https://www.pexels.com/photo/female-dj-in-a-pink-light-19556998/</a>
         </li>
         <li>Yuri Manei. Photographer. 2019. <strong>Women's White Framed Sunglasses [Image]</strong>. Retrieved from <a
@@ -412,9 +452,9 @@
         </li>
       </ul>
     </section>
-  
+
   </section>
-  
+
 
 </body>
 
