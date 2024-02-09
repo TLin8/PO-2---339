@@ -319,14 +319,14 @@ input {
 }
 
 /* CONTACT US SECTION */
-.contact-us {
+.client-form {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;
 }
 
-.contact-us h2 {
+.client-form h2 {
   text-align: center;
 }
 
@@ -337,7 +337,7 @@ input {
 
 .input-group input,
 #subject,
-#message {
+.message {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
@@ -353,12 +353,12 @@ input {
   margin-left: 10px; 
 }
 
-#message {
+.message {
   height: 200px;
   resize: none;
 }
 
-.contact-us button {
+.client-form button {
   width: 100%;
   padding: 12px;
   background-color: #27064f;
@@ -368,7 +368,39 @@ input {
   transition: background-color 0.3s ease-in-out;
 }
 
-.contact-us button:hover {
+.client-form button:hover {
   opacity: 0.5; 
 }
+
+#feedback-client-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#feedback-client-info :nth-child(1),
+#feedback-client-info :nth-child(2) {
+  flex: 1 1;
+}
+
+#feedback-client-info :nth-child(5) {
+  flex: 1;
+}
+
+#feedback-client-info > * {
+  flex: 0 0 auto;
+}
+
+#feedback-rating input[type="radio"],
+label {
+  all: inherit;
+}
+
+
+
+
+
+
+
 

@@ -340,7 +340,7 @@
     <section class="element">
       <h3>Contact Us</h3>
 
-      <div class="contact-us">
+      <div class="client-form">
         <h2>Contact Us</h2>
         <form method="POST" id="contact-form">
           <div class="input-group">
@@ -348,14 +348,67 @@
             <input type="email" id="email" name="email" placeholder="Email" required>
           </div>
           <input type="text" id="subject" name="subject" placeholder="Subject" required>
-          <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
+          <textarea class="message" name="message" placeholder="Message" rows="5" required></textarea>
 
-          <button type="submit" id="submit-btn">Send Message</button>
+          <button type="submit" class="submit-btn">Send Message</button>
         </form>
       </div>
 
     </section>
     <!-- // CONTACT US -->
+
+    <!-- // FEEDBACK FORM -->
+    <section class="element">
+      <h3>Feedback Form</h3>
+      
+      <div class="client-form">
+        <h2>Give Us Feedback</h2>
+
+        <form id="feedback-form">
+          <div id="feedback-client-info">
+            <input type="text" id="feedback-fname" name="feedback-fname" placeholder="First name" required>
+
+            <input type="text" id="feedback-lname" name="feedback-lname" placeholder="Last name" required>
+
+            <input type="email" id="feedback-email" name="feedback-email" placeholder="Email" required>
+
+            <input type="text" id="invoice-number"name="feedback-invoice" placeholder="Invoice number" required>
+
+            <div>
+              <select name="Purchased Service" id="service-purchase">
+                <option value="select">Select your purchased service</option>
+                <option value="event-package">Event Photography</option>
+                <option value="portrait-package">Portrait Photography</option>
+              </select>
+            </div>
+
+            <div class="feedback-rating">
+              <p>How was your overall experience with this service?</p>
+
+              <input type="radio" id="q1-poor" name="question1" value="poor" />
+              <label for="q1-poor">poor</label>
+        
+              <input type="radio" id="q1-unsat" name="question1" value="unsatisfactory" />
+              <label for="q1-unsat">unsatisfactory</label>
+        
+              <input type="radio" id="q1-sat" name="question1" value="satisfactory" />
+              <label for="q1-sat">satisfactory</label>
+
+              <input type="radio" id="q1-good" name="question1" value="good" />
+              <label for="q1-good">good</label>
+
+              <input type="radio" id="q1-excel" name="question1" value="excellent" />
+              <label for="q1-excel">excellent</label>
+            </div>
+
+            <textarea class="message" rows="10" placeholder="Additional details or comments"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Feedback</button>
+        </form>
+      </div>
+    </section>
+    <!-- // FEEDBACK FORM -->
 
   </section>
   <!-- // COMBINED ELEMENTS SECTION -->
