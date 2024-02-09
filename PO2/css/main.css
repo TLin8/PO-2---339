@@ -301,16 +301,21 @@ input {
 }
 
 /* MORE DETAILS SECTION */
-#more_details {
-  max-width: 50%;
+#more-details {
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+}
+
+.main-info{
+  display: flex;
+  justify-content: space-between;
 }
 
 .service-details img {
-  width: 100%;
+  width: 50%;
   margin-bottom: 0.5rem;
+  margin-right: 20px;
 }
 
 /* CONTACT US SECTION */
