@@ -29,6 +29,7 @@ h2 {
 h3 {  
   font-family: 'Roboto Regular', sans-serif;
   font-size: 1.5rem;
+  line-height: 2rem;
   margin-top: 1rem;
 }
 
@@ -397,6 +398,54 @@ label {
   all: inherit;
 }
 
+/* HOME PAGE TEMPLATE */
+/* Guidance from: https://www.youtube.com/watch?v=Ch_LoWKLv3A&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3*/
+.hero img {
+  max-width: 100vw;
+}
+
+.container {
+  width: min(1110px, 100% - (1rem * 2));
+  margin-inline: auto;
+  padding-bottom: 1.5rem;
+}
+
+.about-us {
+  width: min(1110px, 50%);
+  margin-inline: auto;
+}
+
+.about-us h2 {
+  text-align: center;
+}
+
+.event-photography {
+  display: grid;
+  gap: 1rem;
+}
+
+.event-photography img {
+  width: 33vw;
+}
+
+.portrait-photography {
+  display: grid;
+  gap: 1rem;
+}
+
+.portrait-photography img {
+  width: 40vw;
+}
+
+@media (min-width: 50em) {
+  .event-photography {
+    grid-auto-flow: column;
+  }
+
+  .portrait-photography {
+    grid-auto-flow: column;
+  }
+}
 
 
 
