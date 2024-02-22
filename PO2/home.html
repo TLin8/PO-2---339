@@ -14,13 +14,18 @@
 
 <body>
 
-  <!-- BUILDING RESPOONSIVE WEBSITES FROM: https://www.youtube.com/watch?v=3K6zr1CdZy8&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=2 -->
+  <!-- BUILDING RESPOONSIVE WEBSITES FROM KEVIN POWELL: https://www.youtube.com/watch?v=3K6zr1CdZy8&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=2 -->
   <header class="nav">
-    <div class="container">
+    <div class="nav-wrapper">
       <!-- NOTE: Make a logo later -->
       <a href="#"><img src="images/logo.png" alt="Eclipse Studios"></a>
-      <nav class="primary-nav">
-        <ul role="list" class="nav-list">
+      <!-- Aria-controls from Kevin Powell -->
+      <button class="mobile-nav-toggle" aria-controls="primary-nav">
+        <img class="icon-hamburger-menu" src="img/hamburger-icon.svg" alt="">
+        <img class="icon-close-menu" src="img/close-icon.svg" alt="">
+        <span class="visually-hidden">Menu</span></button>
+      <nav class="primary-nav" id="primary-nav">
+        <ul aria-label="Primary" role="list" class="nav-list">
           <li><a href="home.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -61,9 +66,9 @@
           <div>
             <h2>Event Photography</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper dolor nec nisi bibendum, nec
-            ultricies risus varius. In id augue eget justo sagittis gravida. Nullam dapibus dolor eu orci gravida, eu
-            facilisis nisi lacinia. Integer et elit ligula. Fusce ac fermentum risus. Maecenas luctus lectus et massa
-            commodo, vitae vulputate tellus cursus.</p>
+              ultricies risus varius. In id augue eget justo sagittis gravida. Nullam dapibus dolor eu orci gravida, eu
+              facilisis nisi lacinia. Integer et elit ligula. Fusce ac fermentum risus. Maecenas luctus lectus et massa
+              commodo, vitae vulputate tellus cursus.</p>
             <ul role="list">
               <li>Music festivals</li>
               <li>Nightclub events</li>
@@ -87,9 +92,9 @@
           <div>
             <h2>Portrait Photography</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper dolor nec nisi bibendum, nec
-            ultricies risus varius. In id augue eget justo sagittis gravida. Nullam dapibus dolor eu orci gravida, eu
-            facilisis nisi lacinia. Integer et elit ligula. Fusce ac fermentum risus. Maecenas luctus lectus et massa
-            commodo, vitae vulputate tellus cursus.</p>
+              ultricies risus varius. In id augue eget justo sagittis gravida. Nullam dapibus dolor eu orci gravida, eu
+              facilisis nisi lacinia. Integer et elit ligula. Fusce ac fermentum risus. Maecenas luctus lectus et massa
+              commodo, vitae vulputate tellus cursus.</p>
             <ul role="list">
               <li>Individual portrait sessions</li>
               <li>Group portrait Sessions</li>

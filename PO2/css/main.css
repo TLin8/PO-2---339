@@ -111,14 +111,14 @@ header {
   padding: 1rem;
 }
 
-nav {
+/* nav {
   width: 100%;
   background-color: #27064f; 
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-}
+} */
 
 nav a {
   color: white;
@@ -398,8 +398,80 @@ label {
   all: inherit;
 }
 
+/* NAVIGATION MENU */
+/* Guidance from: https://www.youtube.com/watch?v=Ch_LoWKLv3A&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3*/
+
+/* This class is from https://a11y-guidelines.orange.com/en/articles/accessible-hiding/ */
+.visually-hidden {
+  position: absolute;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: auto;
+  padding: 0px 20px;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: clamp(1rem, 2.5vw, 1.25rem);
+}
+
+@media (max-width: 50em) {
+  .primary-nav {
+    display: block;
+    position: absolute;
+    padding: 2.25rem;
+    inset: 7rem 1.25rem auto;
+    background: #27064f;
+    border-radius: 0.25rem;
+  }
+
+  .nav-list {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
+  
+  .mobile-nav-toggle .icon-close-menu {
+    display: none;
+  }
+}
+
 /* HOME PAGE TEMPLATE */
 /* Guidance from: https://www.youtube.com/watch?v=Ch_LoWKLv3A&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3*/
+
 .main-content-padding {
   padding-block: 2.5rem;
 }
