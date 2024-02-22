@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eclipse Studios - Portfolio</title>
+    <title>Eclipse Studios - Contact</title>
 
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -32,28 +32,17 @@
     <main>
         <section>
             <div class="container">
-                <div class="portfolio">
-                    <div class="portfolio-gallery">
-                        <figure>
-                            <img src="img/club1.jpg" alt="An events shot.">
-                            <figcaption>Dynamic Atmosphere</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="img/club2.jpg" alt="An events shot.">
-                            <figcaption>Energetic Crowd</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="img/club3.jpg" alt="An events shot.">
-                            <figcaption>Excitement Unleashed</figcaption>
-                        </figure>
-
-                        <figure>
-                            <img src="img/club4.jpg" alt="An events shot.">
-                            <figcaption>Lively Moments</figcaption>
-                        </figure>
-                    </div>
+                <div class="client-form">
+                    <h2>Contact Us</h2>
+                    <form method="POST" id="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        <textarea class="message" name="message" placeholder="Message" rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
