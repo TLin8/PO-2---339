@@ -81,20 +81,60 @@
 }
 
 /* PORTFOLIO TEMPLATE */
-figure {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+.gallery {
+    background-color: black;
 }
 
-figure img {
-  width: 70%;
-  max-height: 200px;
-  object-fit: cover;
+.product-gallery * {
+	box-sizing: border-box;
 }
 
-figcaption {
-  font-family: 'Roboto Medium', sans-serif;
-  color: rgb(59, 7, 102);
-  font-size: 1.5rem;
+.product-gallery img {
+	width: 100%;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
+}
+
+.product-gallery ul {
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 100%;
+	width: 70rem;
+    margin: auto;
+}
+
+.product-gallery figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.product-gallery figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	color: white;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;
+}
+
+.product-gallery a:is(:hover, :focus) figure::after {
+	opacity: 1;
+}
+
+.product-gallery a:is(:hover, :focus) figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
 }
