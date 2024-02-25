@@ -80,6 +80,21 @@
   border: 1px solid rebeccapurple;
 }
 
+/* ABOUT TEMPLATE */
+.about-us {
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+.about-us img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
 /* PORTFOLIO TEMPLATE */
 .gallery {
     background-color: black;
