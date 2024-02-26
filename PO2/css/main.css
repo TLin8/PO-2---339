@@ -2,13 +2,14 @@
 body {
   margin: 0;
   font-family: 'Roboto Medium', sans-serif;
+  background-color: black;
 }
 
 /* Element Styles */
 .element {
   padding-left: 2rem;
   padding-bottom: 2rem;
-  border-top: 0.3rem solid rgb(40, 2, 90);
+  border-top: 0.3rem solid rgb(103, 33, 196);
 }
 
 /* Heading Styles */
@@ -17,6 +18,7 @@ h1 {
   font-size: 3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 h2 {
@@ -24,6 +26,7 @@ h2 {
   color: rgb(59, 7, 102);
   font-size: 2rem;
   margin-top: 1rem;
+  color: white;
 }
 
 h3 {  
@@ -31,27 +34,34 @@ h3 {
   font-size: 1.5rem;
   line-height: 2rem;
   margin-top: 1rem;
+  color: white;
 }
 
 h4 {
   font-family: 'Roboto Medium', sans-serif;
   font-size: 1rem;
   margin-bottom: 1rem;
+  color: white;
+}
+
+ul{
+  color: white;
 }
 
 /* Style Guide Template Heading */
 h5 {
   padding-left: 2rem;
-  color: rgb(105, 17, 177);
   font-size: 2.25rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 /* Paragraph Styles */
 p {
   margin-top: 0;
   font-family: 'Roboto Regular', sans-serif;
+  color: white;
 }
 
 /* Code Styles */
@@ -135,6 +145,7 @@ a {
   font-family: 'Roboto Medium', sans-serif;
   font-size: 1rem;
   transition: color 0.3s ease-in-out;
+  color: white;
 }
 
 a:hover,
@@ -187,7 +198,7 @@ a:focus {
 #checkout-payment h1 {
   text-align: center;
   font-size: 2.4rem;
-  color: rgb(59, 7, 102);
+  color: white;
   margin-bottom: 25px;
 }
 
@@ -219,6 +230,7 @@ a:focus {
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/all */
 .payment-type label, input[type="radio"] {
   all: revert;
+  color: white;
 }
 
 label {
@@ -258,13 +270,8 @@ input {
   margin-bottom: 0.5rem;
 }
 
-.service-item h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
 .service-item h3 {
-  color: #27064f;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
@@ -295,7 +302,7 @@ input {
 
 .element figcaption {
   font-family: 'Roboto Medium', sans-serif;
-  color: rgb(59, 7, 102);
+  color: rgb(98, 0, 255);
   font-size: 1.5rem;
 }
 
@@ -327,6 +334,7 @@ input {
 
 .client-form h2 {
   text-align: center;
+  color: white;
 }
 
 .input-group {
@@ -394,6 +402,7 @@ input {
 #feedback-rating input[type="radio"],
 label {
   all: inherit;
+  color: white;
 }
 
 /* NAVIGATION MENU */
