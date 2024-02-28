@@ -6,9 +6,8 @@
 
 /* HOME PAGE TEMPLATE */
 /* Guidance from: https://www.youtube.com/watch?v=Ch_LoWKLv3A&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3*/
-
 .main-content-padding {
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
 }
 
 .hero {
@@ -45,15 +44,7 @@
 
 .service-button {
   padding-top: 2rem;
-}
-
-.photography-service {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.photography-service img {
-  width: 33vw;
+  text-align: center;
 }
 
 @media (min-width: 50em) {
@@ -67,6 +58,57 @@
   z-index: 1;
   top: 40%;
   left: 43%
+}
+
+/* HOME-Services */
+.home-service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home-service-item {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 40px;
+}
+
+.home-service-item img {
+  width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* HOME-Gallery */
+
+/* HOME-Testimonial */
+.testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.testimonial {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 40px;
+}
+
+/* HOME-Blog */
+.blog-posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-post {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 40px;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 /* Cropping and positioning images: https://www.educative.io/answers/how-to-crop-an-image-in-css */
@@ -96,10 +138,6 @@
 }
 
 /* PORTFOLIO TEMPLATE */
-.gallery {
-    background-color: black;
-}
-
 .product-gallery * {
 	box-sizing: border-box;
 }
