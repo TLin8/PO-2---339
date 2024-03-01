@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclipse Studios - Services</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/website.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="nav">
+        <div class="container">
+            <a href="#"><img src="images/logo.png" alt="Eclipse Studios"></a>
+            <nav class="primary-nav">
+                <ul role="list" class="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <!-- Booking Information -->
+            <div class="booking-info">
+                <h2>Booking Information</h2>
+                <p>To book our photography services, please fill out the form below:</p>
+                <form method="book" id="book-form">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected hidden>Service</option>
+                        <option value="Events Photography">Events Photography</option>
+                        <option value="Portrait Photography">Portrait Photography</option>
+                    </select>
+                    <input type="date" id="date" name="date" placeholder="Preferred Date" required>
+                    <!-- Additional Information -->
+                    <div class="additional-info">
+                        <textarea id="message" name="message" rows="4" cols="50" placeholder="Additional Information"></textarea>
+                    </div>
+                    <input type="submit" value="Next">
+                </form>
+            </div>
+        </section>
+    </main>
+    
+
+
+</body>
+
+</html>

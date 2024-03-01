@@ -221,3 +221,65 @@
 	opacity: 1;
 	transition: opacity 600ms;
 }
+
+/* SERVICES TEMPLATE */
+.service-page {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.events-service, .portrait-service, .pricing{
+  margin-bottom: 100px;
+  border-bottom: 0.3rem solid rgb(81, 9, 175);
+}
+
+.events-service img, .portrait-service img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.events-service ul, .portrait-service ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.events-service ul li, .portrait-service ul li {
+  margin-bottom: 5px;
+}
+
+/* BOOKING TEMPLATE */
+.booking-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.booking-info h2, .booking-info p {
+  text-align: center;
+}
+
+.booking-info form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-info input,
+.booking-info select,
+.booking-info textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.booking-info textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+
