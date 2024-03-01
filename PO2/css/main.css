@@ -112,12 +112,12 @@ a img:hover {
 }
 
 /* Header and Nav Styles */
-header {
+/* header {
   background-color: rgba(22, 0, 49, 0.60); 
   color: white;
   text-align: center;
   padding: 1rem;
-}
+} */
 
 /* nav {
   width: 100%;
@@ -127,17 +127,6 @@ header {
   align-items: center;
   margin-top: 1rem;
 } */
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-}
-
-nav a:hover {
-  opacity: 0.5; 
-}
 
 /* Hyperlink Styles */
 a {
@@ -409,7 +398,7 @@ label {
 /* Guidance from: https://www.youtube.com/watch?v=Ch_LoWKLv3A&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3*/
 
 /* This class is from https://a11y-guidelines.orange.com/en/articles/accessible-hiding/ */
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   position: absolute !important;
   width: 1px !important;
@@ -474,7 +463,111 @@ label {
   .mobile-nav-toggle .icon-close-menu {
     display: none;
   }
+} */
+
+/* Sticky nav from: https://stackoverflow.com/questions/3593594/how-to-keep-the-header-static-always-on-top-while-scrolling/58645785#58645785 */
+/* .nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 1.5rem 5%;
+  background-color: rgba(22, 0, 49, 0.60);
 }
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+}
+
+nav a:hover {
+  opacity: 0.5; 
+}
+
+.hamburger-button {
+
+} */
+
+
+
+
+/* Sticky nav from: https://stackoverflow.com/questions/3593594/how-to-keep-the-header-static-always-on-top-while-scrolling/58645785#58645785 */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(22, 0, 49, 0.60);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+}
+
+nav {
+  display: flex;
+  gap: 4rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.15rem;
+}
+
+#menu-btn {
+  /* display: none; */
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0;
+  background: none;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    z-index: 999;
+    position: absolute;
+    top: 90px;
+    background: rgb(62, 0, 113);
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  nav a:first-child {
+    margin-top: 5rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  
+  #menu-btn:checked + nav {
+    height: 100vh;
+  }
+}
+
 
 
 

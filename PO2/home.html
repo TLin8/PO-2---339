@@ -13,28 +13,23 @@
 </head>
 
 <body>
-
   <!-- BUILDING RESPOONSIVE WEBSITES FROM KEVIN POWELL: https://www.youtube.com/watch?v=3K6zr1CdZy8&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=2 -->
-  <header class="nav">
-    <div class="nav-wrapper">
-      <!-- NOTE: Make a logo later -->
-      <a href="#"><img src="images/logo.png" alt="Eclipse Studios"></a>
-      <!-- Aria-controls from Kevin Powell -->
-      <button class="mobile-nav-toggle" aria-controls="primary-nav">
-        <img class="icon-hamburger-menu" src="img/hamburger-icon.svg" alt="">
-        <img class="icon-close-menu" src="img/close-icon.svg" alt="">
-        <span class="visually-hidden">Menu</span></button>
-      <nav class="primary-nav" id="primary-nav">
-        <ul aria-label="Primary" role="list" class="nav-list">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+  <!-- BULDING RESPONSIVE NAV BAR FROM: https://www.youtube.com/watch?v=yE9DLIoDwCg -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="#" class="nav-logo"><img src="images/logo.png" alt="Eclipse Studios"></a>
     </div>
 
+    <input type="checkbox" id="menu-btn">
+    <!-- <label class="menu-icon" for="menu-btn">&#9776;</label> -->
+
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
