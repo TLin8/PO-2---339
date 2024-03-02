@@ -1,3 +1,29 @@
+/* Font size maintenance */
+:root {
+  --fs-xl: 3rem;
+  --fs-600: 2rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1rem; 
+}
+
+@media (max-width: 992px) {
+  :root {
+    --fs-xl: 2.75rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1rem;
+    --fs-400: 1rem; 
+  }
+}
+
+@media (max-width: 450px) {
+  :root {
+    --fs-xl: 2rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.3rem;
+    --fs-400: 1rem; 
+  }
+}
+
 /* Body Styles */
 body {
   margin: 0;
@@ -15,7 +41,7 @@ body {
 /* Heading Styles */
 h1 {
   font-family: 'Roboto Bold', sans-serif;
-  font-size: 3rem;
+  font-size: var(--fs-xl);
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: white;
@@ -24,14 +50,14 @@ h1 {
 h2 {
   font-family: 'Roboto Medium', sans-serif;
   color: rgb(59, 7, 102);
-  font-size: 2rem;
+  font-size: var(--fs-600);
   margin-top: 1rem;
   color: white;
 }
 
 h3 {  
   font-family: 'Roboto Regular', sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--fs-500);
   line-height: 2rem;
   margin-top: 1rem;
   color: white;
@@ -39,7 +65,7 @@ h3 {
 
 h4 {
   font-family: 'Roboto Medium', sans-serif;
-  font-size: 1rem;
+  font-size: var(--fs-400);
   margin-bottom: 1rem;
   color: white;
 }
@@ -51,7 +77,7 @@ ul{
 /* Style Guide Template Heading */
 h5 {
   padding-left: 2rem;
-  font-size: 2.25rem;
+  font-size: var(--fs-400);
   margin-top: 3rem;
   margin-bottom: 1rem;
   color: white;
@@ -61,6 +87,7 @@ h5 {
 p {
   margin-top: 0;
   font-family: 'Roboto Regular', sans-serif;
+  font-size: var(--fs-400);
   color: white;
 }
 
