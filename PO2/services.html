@@ -14,19 +14,47 @@
 
 <body>
 
-    <header class="nav">
-        <div class="container">
-            <a href="#"><img src="images/logo.png" alt="Eclipse Studios"></a>
-            <nav class="primary-nav">
-                <ul role="list" class="nav-list">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="navbar">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg"
+                            height="26" viewBox="0 -960 960 960" width="26">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Close and menu icons from: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@0;opsz@24 -->
+            <ul>
+                <li><a href="#" class="nav-logo"><img src="images/logo.png" alt="Eclipse Studios"></a></li>
+                <li class="hideOnMobile"><a href="home.html">Home</a></li>
+                <li class="hideOnMobile"><a href="about.html">About</a></li>
+                <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
+                <li class="hideOnMobile"><a href="services.html">Services</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="close-icon"
+                            xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+
+        <!-- Responsive navbar from: https://www.youtube.com/watch?v=U8smiWQ8Seg&t=386s -->
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex';
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none';
+            }
+        </script>
     </header>
 
     <main>
@@ -44,9 +72,13 @@
                         <li>Customizable packages to fit your specific event needs</li>
                         <li>Quick turnaround time for edited photos</li>
                     </ul>
-                    <p>Our Events Photography service is perfect for capturing the excitement and atmosphere of your special occasions. Whether it's a nightclub event, an EDM festival, or a themed party, our experienced photographers will ensure that every moment is captured beautifully. We offer customizable packages to suit your needs, and our quick turnaround time means you'll have your edited photos in no time.</p>
+                    <p>Our Events Photography service is perfect for capturing the excitement and atmosphere of your
+                        special occasions. Whether it's a nightclub event, an EDM festival, or a themed party, our
+                        experienced photographers will ensure that every moment is captured beautifully. We offer
+                        customizable packages to suit your needs, and our quick turnaround time means you'll have your
+                        edited photos in no time.</p>
                 </div>
-    
+
                 <!-- Service Item 2 -->
                 <div class="portrait-service">
                     <h1>Portrait Photography</h1>
@@ -59,27 +91,36 @@
                         <li>Customizable packages to fit your specific portrait needs</li>
                         <li>Quick turnaround time for edited photos</li>
                     </ul>
-                    <p>Our Portrait Photography service is perfect for capturing the essence of your nightlife. 
-                        Whether you're a DJ, a performer, or just someone who loves the EDM scene, our expert photographers will create stunning portraits that highlight your unique personality. We specialize in low-light settings, ensuring that your portraits capture the atmosphere of the scene. Our customizable packages mean you can choose the perfect portrait session for you, and our quick turnaround time means you'll have your edited photos in no time.</p>
+                    <p>Our Portrait Photography service is perfect for capturing the essence of your nightlife.
+                        Whether you're a DJ, a performer, or just someone who loves the EDM scene, our expert
+                        photographers will create stunning portraits that highlight your unique personality. We
+                        specialize in low-light settings, ensuring that your portraits capture the atmosphere of the
+                        scene. Our customizable packages mean you can choose the perfect portrait session for you, and
+                        our quick turnaround time means you'll have your edited photos in no time.</p>
                 </div>
-    
+
                 <!-- Pricing Section -->
                 <div class="pricing">
                     <h1>Pricing</h1>
-                    <p>Our Events Photography service starts at $199.99, and our Portrait Photography service starts at $59.99. 
-                        To get an exact quote for your event or portrait session, please contact us or complete the booking process, and we will get back to you with a personalized quote.</p>
+                    <p>Our Events Photography service starts at $199.99, and our Portrait Photography service starts at
+                        $59.99.
+                        To get an exact quote for your event or portrait session, please contact us or complete the
+                        booking process, and we will get back to you with a personalized quote.</p>
                 </div>
-    
+
                 <!-- Button to Booking Page -->
                 <div class="booking-services">
-                    <p>Ready to book your photography session? Click the "Book Now" button to be directed to our booking page. Fill out the form with your information, including the type of service you're interested in and your preferred date. Once you've submitted the form, you'll be prompted to pay a deposit to confirm your booking. We can't wait to capture your special moments!</p>
+                    <p>Ready to book your photography session? Click the "Book Now" button to be directed to our booking
+                        page. Fill out the form with your information, including the type of service you're interested
+                        in and your preferred date. Once you've submitted the form, you'll be prompted to pay a deposit
+                        to confirm your booking. We can't wait to capture your special moments!</p>
                     <a href="booking.html" class="button3-nav">Book Now</a>
                 </div>
-    
+
             </div>
         </section>
     </main>
-    
+
 </body>
 
 </html>

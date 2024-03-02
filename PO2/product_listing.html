@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Product/Service Listing</title>
-  
+
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/website.css" rel="stylesheet">
@@ -13,19 +13,47 @@
 
 <body>
 
-  <header>
-    <h1>Product/Service Listing</h1>
-
+  <header class="navbar">
     <nav>
-      <a href="index.html#interactive_elements">Interactive Elements</a>
-      <a href="index.html#text_elements">Text Elements</a>
-      <a href="index.html#combined_elements">Combined Elements</a>
-      <a href="product_listing.html">Product Listing Template</a>
-      <a href="checkout.html">Checkout Template</a>
-      <a href="index.html#citations">Citations</a>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" height="26"
+              viewBox="0 -960 960 960" width="26">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <!-- Close and menu icons from: https://fonts.google.com/icons?selected=Material+Symbols+Outlined:close:FILL@0;wght@400;GRAD@0;opsz@24 -->
+      <ul>
+        <li><a href="#" class="nav-logo"><img src="images/logo.png" alt="Eclipse Studios"></a></li>
+        <li class="hideOnMobile"><a href="home.html">Home</a></li>
+        <li class="hideOnMobile"><a href="about.html">About</a></li>
+        <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
+        <li class="hideOnMobile"><a href="services.html">Services</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg class="close-icon"
+              xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></a></li>
+      </ul>
     </nav>
 
+    <!-- Responsive navbar from: https://www.youtube.com/watch?v=U8smiWQ8Seg&t=386s -->
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex';
+      }
 
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none';
+      }
+    </script>
   </header>
 
   <!-- PRODUCT/SERVICE LISTING SECTION -->
