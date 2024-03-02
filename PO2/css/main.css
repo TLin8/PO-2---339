@@ -111,23 +111,6 @@ a img:hover {
   width: 35%; 
 }
 
-/* Header and Nav Styles */
-/* header {
-  background-color: rgba(22, 0, 49, 0.60); 
-  color: white;
-  text-align: center;
-  padding: 1rem;
-} */
-
-/* nav {
-  width: 100%;
-  background-color: #27064f; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-} */
-
 /* Hyperlink Styles */
 a {
   color: #27064f;
@@ -394,120 +377,8 @@ label {
   color: white;
 }
 
-/* NAVIGATION MENU */
-/* Guidance from: https://www.youtube.com/watch?v=Ch_LoWKLv3A&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3*/
-
-/* This class is from https://a11y-guidelines.orange.com/en/articles/accessible-hiding/ */
-/* .visually-hidden {
-  position: absolute;
-  position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  clip: rect(0,0,0,0) !important;
-  white-space: nowrap !important;
-  border: 0 !important;
-}
-
-.nav {
-  display: flex;
-}
-
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-inline: auto;
-  padding: 0px 20px;
-}
-
-.mobile-nav-toggle {
-  display: none;
-}
-
-.nav-list {
-  display: flex;
-  gap: clamp(1rem, 2.5vw, 1.25rem);
-}
-
-@media (max-width: 50em) {
-  .primary-nav {
-    display: block;
-    position: absolute;
-    padding: 2.25rem;
-    inset: 7rem 1.25rem auto;
-    background: #27064f;
-    border-radius: 0.25rem;
-  }
-
-  .nav-list {
-    display: grid;
-    gap: 1.5rem;
-    text-align: center;
-  }
-
-  .mobile-nav-toggle {
-    display: block;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    padding: 0.5em;
-  }
-
-  .mobile-nav-toggle {
-    display: block;
-  }
-  
-  .mobile-nav-toggle .icon-close-menu {
-    display: none;
-  }
-} */
-
 /* Sticky nav from: https://stackoverflow.com/questions/3593594/how-to-keep-the-header-static-always-on-top-while-scrolling/58645785#58645785 */
-/* .nav {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  padding: 1.5rem 5%;
-  background-color: rgba(22, 0, 49, 0.60);
-}
-
-.nav-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-}
-
-nav a:hover {
-  opacity: 0.5; 
-}
-
-.hamburger-button {
-
-} */
-
-
-
-
-/* Sticky nav from: https://stackoverflow.com/questions/3593594/how-to-keep-the-header-static-always-on-top-while-scrolling/58645785#58645785 */
-.navbar {
+/* .navbar {
   position: sticky;
   top: 0;
   z-index: 999;
@@ -530,7 +401,7 @@ nav a {
 }
 
 #menu-btn {
-  /* display: none; */
+  display: none;
 }
 
 .menu-icon {
@@ -565,6 +436,93 @@ nav a {
   
   #menu-btn:checked + nav {
     height: 100vh;
+  }
+} */
+
+nav {
+  background: rgba(22, 0, 49, 0.60);
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  height: 4.5rem;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+nav a:hover {
+  opacity: unset;
+  background-color: rgba(66, 21, 121, 0.808);
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rebeccapurple;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.close-icon {
+  fill: white;
+}
+
+.menu-icon {
+  fill: white;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
   }
 }
 
