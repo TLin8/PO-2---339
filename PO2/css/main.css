@@ -377,67 +377,14 @@ label {
   color: white;
 }
 
+/* Navigation bar */
+
 /* Sticky nav from: https://stackoverflow.com/questions/3593594/how-to-keep-the-header-static-always-on-top-while-scrolling/58645785#58645785 */
-/* .navbar {
+.navbar {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: rgba(22, 0, 49, 0.60);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 5rem;
 }
-
-nav {
-  display: flex;
-  gap: 4rem;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.15rem;
-}
-
-#menu-btn {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-  font-size: 2rem;
-  padding: 0;
-  background: none;
-}
-
-@media (max-width: 1000px) {
-  nav {
-    z-index: 999;
-    position: absolute;
-    top: 90px;
-    background: rgb(62, 0, 113);
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    height: 0;
-    align-items: center;
-    overflow: hidden;
-  }
-
-  nav a:first-child {
-    margin-top: 5rem;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-  
-  #menu-btn:checked + nav {
-    height: 100vh;
-  }
-} */
 
 nav {
   background: rgba(22, 0, 49, 0.60);
