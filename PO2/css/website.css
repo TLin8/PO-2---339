@@ -91,6 +91,7 @@
   position: relative;
   width: min(1110px, 100% - (1rem * 2));
   margin-inline: auto;
+  padding-block: 5rem;
 }
 
 .about-us {
@@ -276,8 +277,8 @@
   padding: 20px;
 }
 
-.events-service, .portrait-service, .pricing{
-  margin-bottom: 100px;
+.events-service, .portrait-service, .pricing, .booking-services {
+  padding: 1rem 0 5rem 0;
   border-bottom: 0.3rem solid rgb(81, 9, 175);
 }
 
@@ -285,17 +286,27 @@
   width: 100%;
   max-height: 400px;
   object-fit: cover;
-  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
   border: 1px solid #ccc;
+}
+
+.events-service p, .portrait-service p, .pricing p, .booking-services p {
+  max-width: 40rem;
 }
 
 .events-service ul, .portrait-service ul {
   list-style-type: none;
-  padding: 20px;
+  padding: 1rem;
 }
 
 .events-service ul li, .portrait-service ul li {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* BOOKING TEMPLATE */
