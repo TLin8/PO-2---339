@@ -219,58 +219,40 @@
 }
 
 /* PORTFOLIO TEMPLATE */
-.product-gallery * {
-	box-sizing: border-box;
+.gallery {
+  display: flex;
 }
 
-.product-gallery img {
-	width: 100%;
-	display: block;
-	aspect-ratio: 1 / 1;
-	object-fit: cover;
-	transition: transform 1000ms;
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
 }
 
-.product-gallery ul {
-	margin: 0;
-	padding: 0;
-	display: grid;
-	gap: 0.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	max-width: 100%;
-	width: 70rem;
-    margin: auto;
+.gallery-link:hover .gallery-caption {
+  opacity: 1;
 }
 
-.product-gallery figure {
-	margin: 0;
-	position: relative;
-	overflow: hidden;
+.gallery-thumb {
+  position: relative;
 }
 
-.product-gallery figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	place-items: center;
-	text-align: center;
-	color: white;
-	z-index: 1;
-	opacity: 0;
-	transition: opacity 600ms, transform 600ms;
+.gallery-image {
+  display: block;
+  width: 100%;
+  transition: .3s; 
 }
 
-.product-gallery a:is(:hover, :focus) figure::after {
-	opacity: 1;
+.gallery-image:hover {
+  transform: scale(1.1);
 }
 
-.product-gallery a:is(:hover, :focus) figcaption {
-	opacity: 1;
-	transition: opacity 600ms;
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
 }
 
 /* SERVICES TEMPLATE */
