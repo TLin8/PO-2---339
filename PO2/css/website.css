@@ -5,6 +5,7 @@
   position: relative;
   margin-inline: auto;
   text-align: right;
+  margin-block-end:10rem;
 }
 
 .hero .opacity-box {
@@ -86,9 +87,10 @@
 
 .container {
   position: relative;
+  /* min() function from: https://www.youtube.com/watch?v=Ch_LoWKLv3A&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA&index=3*/
   width: min(1110px, 100% - (1rem * 2));
   margin-inline: auto;
-  padding-block: 5rem;
+  padding-block-end: 7rem;
 }
 
 @media (max-width: 450px) {
@@ -198,14 +200,6 @@
   align-items: center;
   margin-bottom: 150px;
   width: 80%;
-
-}
-
-.about-content {
-  flex: 1;
-  padding: 20px;
-  width: 50%;
-  border-top: 0.3rem solid rgb(81, 9, 175);
 }
 
 .about-image {
