@@ -5,7 +5,7 @@
   position: relative;
   margin-inline: auto;
   text-align: right;
-  margin-block-end:10rem;
+  margin-block-end: 10rem;
 }
 
 .hero .opacity-box {
@@ -43,6 +43,10 @@
 }
 
 @media (max-width: 1200px) {
+  .hero {
+    margin-block-end: 8rem;
+  }
+
   .hero h1 {
     font-size: 7rem;
     text-decoration-thickness: 8px;
@@ -54,6 +58,10 @@
 }
 
 @media (max-width: 1000px) {
+  .hero {
+    margin-block-end: 7rem;
+  }
+
   .hero h1 {
     font-size: 6rem;
     text-decoration-thickness: 6px;
@@ -73,6 +81,10 @@
 }
 
 @media (max-width: 600px) {
+  .hero {
+    margin-block-end: 5rem;
+  }
+
   .hero h1 {
     font-size: 3rem;
     text-decoration-thickness: 5px;
@@ -95,7 +107,7 @@
 
 @media (max-width: 450px) {
   .container {
-    padding-block: 2rem;
+    padding-block-end: 2rem;
   }
 }
 
