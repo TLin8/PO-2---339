@@ -162,6 +162,15 @@
   list-style-type: none;
 }
 
+/* HOME-BACKGROUND*/
+.background-image {
+    background-image: url('../img/edm.jpg');
+    background-color: rgba(0, 0, 0, 0.85); 
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+} 
+
 /* HOME-Testimonial */
 .testimonial-container {
   display: flex;
@@ -213,7 +222,6 @@
   object-position: 0 35%;
   display: block;
   z-index: 0;
-  border: 1px solid rebeccapurple;
 }
 
 /* ABOUT TEMPLATE */
