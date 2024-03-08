@@ -194,22 +194,49 @@
 }
 
 /* ABOUT TEMPLATE */
-.about-us {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 150px;
-  width: 80%;
+.about-us-intro {
+  margin-top: 10rem;
 }
 
-.about-image {
-  flex: 1;
-  width: 50%; 
+/* Grid guide from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout */
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-.about-image img {
-  max-width: 100%;
-  height: auto;
+@media (max-width: 950px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-content :nth-child(2) { order: 1; }
+  .about-content :nth-child(1) { order: 2; }
+
+  .about-content img {
+    height: 50vh;
+    object-fit: cover;
+  }
+}
+
+.about-content img {
+  width: 100%;
+}
+
+.about-content ul {
+  margin-top: 2rem;
+}
+
+.about-content ul li{
+  padding-bottom: 0.75rem;
+  font-family: 'Roboto Regular', sans-serif;
+  line-height: 1.5rem;
+}
+
+.about-content ul span{
+  padding-bottom: 0.75rem;
+  font-family: 'Roboto bold', sans-serif;
 }
 
 /* PORTFOLIO TEMPLATE (On Homepage) */
