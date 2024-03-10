@@ -105,7 +105,7 @@
   padding-block-end: 7rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .container {
     padding-block-end: 2rem;
   }
