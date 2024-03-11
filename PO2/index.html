@@ -229,340 +229,344 @@
               </div>
             </div>
           </div>
-      </section>
-    </section>
-    <!-- // MORE DETAILS SECTION -->
-
-    <!-- CHECKOUT PAYMENT -->
-    <section class="element">
-      <h3>Payment Information</h3>
-      <section id="checkout-payment">
-        <h1>Payment Info</h1>
-
-        <h3>Customer Info</h3>
-
-        <div class="personal-info">
-          <div>
-            <label for="first-name">First name</label>
-            <input type="text" id="first-name" name="first-name" required>
-          </div>
-
-          <div>
-            <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" required>
-          </div>
-        </div>
-
-        <h3>Contact Info</h3>
-
-        <div class="personal-info">
-          <div>
-            <label for="phone-num">Phone number</label>
-            <input type="tel" id="phone-num" name="phone-num" required>
-          </div>
-
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-        </div>
-
-        <h3>Billing Info</h3>
-
-        <div class="billing-info">
-          <div>
-            <label for="card-name">Cardholder name</label>
-            <input type="text" id="card-name" name="card-name" placeholder="John Smith" required>
-          </div>
-
-          <div>
-            <label for="card-num">Card number</label>
-            <input type="text" id="card-num" name="card-num" required>
-          </div>
-
-          <div>
-            <label for="expiry-date">Expiry date</label>
-            <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
-          </div>
-
-          <div>
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv" name="cvv" required>
-          </div>
-        </div>
-
-        <div class="payment-type">
-          <div>
-            <label for="credit-card">Card</label>
-            <input type="radio" id="credit-card" name="pay-method" value="credit-card" checked>
-          </div>
-
-          <div>
-            <label for="apple">Apple Pay</label>
-            <input type="radio" id="apple" name="pay-method" value="apple">
-          </div>
-        </div>
-
-        <div>
-          <a class="button3-nav" href="#">Submit</a>
         </div>
       </section>
-      <!-- // CHECKOUT PAYMENT -->
+      <!-- // MORE DETAILS SECTION -->
 
-    </section>
+      <!-- CHECKOUT PAYMENT -->
+      <section class="element">
+        <h3>Payment Information</h3>
+        <section id="checkout-payment">
+          <h1>Payment Info</h1>
 
-    <section class="element">
-      <h3>Checkout Cart</h3>
+          <h3>Customer Info</h3>
 
-      <div class="checkout-cart">
-        <div class="cart-item">
-          <h2>Portrait Photography Service</h2>
-          <img src="img/photo2.webp" alt="Portrait Service">
-          <p>Price: $59.99</p>
-        </div>
-
-        <div class="cart-item">
-          <h2>Events Photography Service</h2>
-          <img src="img/photo3.webp" alt="Events Service">
-          <p>Price: $199.99</p>
-        </div>
-
-        <div class="cart-total">
-          <h3>Cart Total: $259.98</h3>
-        </div>
-
-        <div>
-          <a class="button2-nav" href="#">Checkout</a>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- // CONTACT US -->
-    <section class="element">
-      <h3>Contact Us</h3>
-
-      <div class="client-form">
-        <h2>Contact Us</h2>
-        <form method="POST" id="contact-form">
-          <div class="input-group">
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-          </div>
-          <input type="text" id="subject" name="subject" placeholder="Subject" required>
-          <textarea class="message" name="message" placeholder="Message" rows="5" required></textarea>
-
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-      </div>
-
-    </section>
-    <!-- // CONTACT US -->
-
-    <!-- // FEEDBACK FORM -->
-    <section class="element">
-      <h3>Feedback Form</h3>
-      
-      <div class="client-form">
-        <h2>Give Us Feedback</h2>
-
-        <form id="feedback-form">
-          <div id="feedback-client-info">
-            <input type="text" id="feedback-fname" name="feedback-fname" placeholder="First name" required>
-
-            <input type="text" id="feedback-lname" name="feedback-lname" placeholder="Last name" required>
-
-            <input type="email" id="feedback-email" name="feedback-email" placeholder="Email" required>
-
-            <input type="text" id="invoice-number"name="feedback-invoice" placeholder="Invoice number" required>
+          <div class="personal-info">
+            <div>
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" required>
+            </div>
 
             <div>
-              <select name="Purchased Service" id="service-purchase">
-                <option value="select">Select your purchased service</option>
-                <option value="event-package">Event Photography</option>
-                <option value="portrait-package">Portrait Photography</option>
-              </select>
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" required>
             </div>
-
-            <div class="feedback-rating">
-              <p>How was your overall experience with this service?</p>
-
-              <input type="radio" id="q1-poor" name="question1" value="poor" />
-              <label for="q1-poor">poor</label>
-        
-              <input type="radio" id="q1-unsat" name="question1" value="unsatisfactory" />
-              <label for="q1-unsat">unsatisfactory</label>
-        
-              <input type="radio" id="q1-sat" name="question1" value="satisfactory" />
-              <label for="q1-sat">satisfactory</label>
-
-              <input type="radio" id="q1-good" name="question1" value="good" />
-              <label for="q1-good">good</label>
-
-              <input type="radio" id="q1-excel" name="question1" value="excellent" />
-              <label for="q1-excel">excellent</label>
-            </div>
-
-            <textarea class="message" rows="10" placeholder="Additional details or comments"></textarea>
           </div>
 
-          <button type="submit" class="submit-btn">Send Feedback</button>
-        </form>
-      </div>
-    </section>
-    <!-- // FEEDBACK FORM -->
+          <h3>Contact Info</h3>
 
+          <div class="personal-info">
+            <div>
+              <label for="phone-num">Phone number</label>
+              <input type="tel" id="phone-num" name="phone-num" required>
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <h3>Billing Info</h3>
+
+          <div class="billing-info">
+            <div>
+              <label for="card-name">Cardholder name</label>
+              <input type="text" id="card-name" name="card-name" placeholder="John Smith" required>
+            </div>
+
+            <div>
+              <label for="card-num">Card number</label>
+              <input type="text" id="card-num" name="card-num" required>
+            </div>
+
+            <div>
+              <label for="expiry-date">Expiry date</label>
+              <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+            </div>
+
+            <div>
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" required>
+            </div>
+          </div>
+
+          <div class="payment-type">
+            <div>
+              <label for="credit-card">Card</label>
+              <input type="radio" id="credit-card" name="pay-method" value="credit-card" checked>
+            </div>
+
+            <div>
+              <label for="apple">Apple Pay</label>
+              <input type="radio" id="apple" name="pay-method" value="apple">
+            </div>
+          </div>
+
+          <div>
+            <a class="button3-nav" href="#">Submit</a>
+          </div>
+        </section>
+        <!-- // CHECKOUT PAYMENT -->
+
+      </section>
+
+      <section class="element">
+        <h3>Checkout Cart</h3>
+
+        <div class="checkout-cart">
+          <div class="cart-item">
+            <h2>Portrait Photography Service</h2>
+            <img src="img/photo2.webp" alt="Portrait Service">
+            <p>Price: $59.99</p>
+          </div>
+
+          <div class="cart-item">
+            <h2>Events Photography Service</h2>
+            <img src="img/photo3.webp" alt="Events Service">
+            <p>Price: $199.99</p>
+          </div>
+
+          <div class="cart-total">
+            <h3>Cart Total: $259.98</h3>
+          </div>
+
+          <div>
+            <a class="button2-nav" href="#">Checkout</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- // CONTACT US -->
+      <section class="element">
+        <h3>Contact Us</h3>
+
+        <div class="client-form">
+          <h2>Contact Us</h2>
+          <form method="POST" id="contact-form">
+            <div class="input-group">
+              <input type="text" id="name" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <textarea class="message" name="message" placeholder="Message" rows="5" required></textarea>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+      </section>
+      <!-- // CONTACT US -->
+
+      <!-- // FEEDBACK FORM -->
+      <section class="element">
+        <h3>Feedback Form</h3>
+
+        <div class="client-form">
+          <h2>Give Us Feedback</h2>
+
+          <form id="feedback-form">
+            <div id="feedback-client-info">
+              <input type="text" id="feedback-fname" name="feedback-fname" placeholder="First name" required>
+
+              <input type="text" id="feedback-lname" name="feedback-lname" placeholder="Last name" required>
+
+              <input type="email" id="feedback-email" name="feedback-email" placeholder="Email" required>
+
+              <input type="text" id="invoice-number" name="feedback-invoice" placeholder="Invoice number" required>
+
+              <div>
+                <select name="Purchased Service" id="service-purchase">
+                  <option value="select">Select your purchased service</option>
+                  <option value="event-package">Event Photography</option>
+                  <option value="portrait-package">Portrait Photography</option>
+                </select>
+              </div>
+
+              <div class="feedback-rating">
+                <p>How was your overall experience with this service?</p>
+
+                <input type="radio" id="q1-poor" name="question1" value="poor" />
+                <label for="q1-poor">poor</label>
+
+                <input type="radio" id="q1-unsat" name="question1" value="unsatisfactory" />
+                <label for="q1-unsat">unsatisfactory</label>
+
+                <input type="radio" id="q1-sat" name="question1" value="satisfactory" />
+                <label for="q1-sat">satisfactory</label>
+
+                <input type="radio" id="q1-good" name="question1" value="good" />
+                <label for="q1-good">good</label>
+
+                <input type="radio" id="q1-excel" name="question1" value="excellent" />
+                <label for="q1-excel">excellent</label>
+              </div>
+
+              <textarea class="message" rows="10" placeholder="Additional details or comments"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Feedback</button>
+          </form>
+        </div>
+      </section>
+      <!-- // FEEDBACK FORM -->
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+    <!-- BASIC BRANDING IDEAS // -->
+    <section id="branding">
+      <h5>Basic Branding Ideas</h5>
+
+      <section class="element">
+        <h3>What does the company do, or offer?</h3>
+        <p>
+          The company offers photography services, including portrait photography and events photography.
+          Additionally, the company sells printed photos of its work.
+        </p>
+      </section>
+
+      <section class="element">
+        <h3>Who is the company to potential customers? (as a person)</h3>
+        <p>
+          As a person, the company is a professional photographer dedicated to offer high-quality services to clients.
+          Our clients are individuals looking for high-quality photography services. They want a skilled professional to
+          provide exceptional work.
+        </p>
+      </section>
+
+      <section class="element">
+        <h3>Why might this company entice someone to purchase a product or service?</h3>
+        <p>
+          This company is committed to provide tailored professional photography services to meet all of their client's
+          needs.
+          The availibility of printed photos also allows clients to own and cherish their captured moments.
+        </p>
+      </section>
+
+    </section>
+    <!-- BASIC BRANDING IDEAS // -->
+
+
+    <!-- Brand Components // -->
+    <section id="brand-components">
+      <h5>Brand Components</h5>
+
+      <section class="element">
+        <h3>Fonts</h3>
+
+        <h1>Heading 1 - Roboto Bold</h1>
+        <h1>Capture Moments with Excellence</h1>
+
+        <h2>Heading 2 - Roboto Medium</h2>
+        <h2>Explore Our Diverse Services</h2>
+
+        <h3>Heading 3 - Roboto Regular</h3>
+        <h3>Embark on a journey with us. Learn about our mission and values, built on principles of transparency,
+          integrity, and unwavering customer satisfaction.</h3>
+
+        <h4>Heading 4 - Roboto Medium</h4>
+        <h4>Contact us today and let's turn your ideas into captivating visuals. We eagerly anticipate the opportunity
+          to
+          collaborate and bring your visions to life.</h4>
+
+      </section>
+
+      <section class="element">
+        <h3>Colour Palettes</h3>
+        <p>
+          A combination of dark colours, complemented by accents of white for an overall modern and clean professional
+          theme.
+        </p>
+
+        <img src="img/colour.png" alt="The colour.">
+        <h4>HEX: 000000 (RGB: 0, 0, 0)</h4>
+        <h4>HEX: 150050 (RGB: 21, 0, 80)</h4>
+        <h4>HEX: 3F0071 (RGB: 63, 0, 113)</h4>
+        <h4>HEX: 610094 (RGB: 97, 0, 148)</h4>
+      </section>
+
+
+      <section class="element">
+        <h3>Potential imagery, and, or, art direction</h3>
+        <p>
+          The imagery on the webpage will showcase a portfolio for the offered services, highlighting the company's
+          range
+          of creative expertise.
+        </p>
+
+        <figure>
+          <img src="img/club1.jpg" alt="An events shot.">
+          <figcaption>Dynamic Atmosphere</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/club2.jpg" alt="An events shot.">
+          <figcaption>Energetic Crowd</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/club3.jpg" alt="An events shot.">
+          <figcaption>Excitement Unleashed</figcaption>
+        </figure>
+
+        <figure>
+          <img src="img/club4.jpg" alt="An events shot.">
+          <figcaption>Lively Moments</figcaption>
+        </figure>
+
+      </section>
+
+
+    </section>
+    <!-- BASIC BRANDING IDEAS // -->
+
+    <section id="citations">
+
+      <h5>Citations</h5>
+      <section class="element">
+        <h4>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a
+            href="Your_URL_here">Your_URL_here</a></h4>
+
+        <ul>
+          <li>Christian Robertson. Designer. (Year). <strong>Roboto Font [Font]</strong>. Retrieved from <a
+              href="https://fonts.google.com/specimen/Roboto">https://fonts.google.com/specimen/Roboto</a>
+          </li>
+          <li>Martin Lopez. Photographer. 2019. <strong>Women Taking Photo [Image]</strong>. Retrieved from <a
+              href="https://www.pexels.com/photo/women-taking-photo-2240763/">https://www.pexels.com/photo/women-taking-photo-2240763/</a>
+          </li>
+          <li>Caroline Cagnin. Photographer. 2018. <strong>Red and Blue Led Signage Turned on [Image]</strong>.
+            Retrieved
+            from <a
+              href="https://www.pexels.com/photo/red-and-blue-led-signage-turned-on-1860668/">https://www.pexels.com/photo/red-and-blue-led-signage-turned-on-1860668/</a>
+          </li>
+          <li>Nicholas Derio Palacios. Photographer. 2023. <strong>Female DJ in a Pink Light [Image]</strong>. Retrieved
+            from <a
+              href="https://www.pexels.com/photo/female-dj-in-a-pink-light-19556998/">https://www.pexels.com/photo/female-dj-in-a-pink-light-19556998/</a>
+          </li>
+          <li>Yuri Manei. Photographer. 2019. <strong>Women's White Framed Sunglasses [Image]</strong>. Retrieved from
+            <a
+              href="https://www.pexels.com/photo/women-s-white-framed-sunglasses-2690323/">https://www.pexels.com/photo/women-s-white-framed-sunglasses-2690323/</a>
+          </li>
+          <li>Wendy Wei. Photographer. 2018. <strong>Purple Fireworks Effect [Image]</strong>. Retrieved from <a
+              href="https://www.pexels.com/photo/purple-fireworks-effect-1190298/">https://www.pexels.com/photo/purple-fireworks-effect-1190298/</a>
+          </li>
+          <li>Joni Bologna. (Year). <strong>Flexbox Cheatsheet [Web Resource]</strong>. Retrieved from <a
+              href="http://jonibologna.com/flexbox-cheatsheet/">http://jonibologna.com/flexbox-cheatsheet/</a>
+          </li>
+          <li>W3Schools. 2014. <strong>CSS Tutorial [Web Resource]</strong>. Retrieved from <a
+              href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a>
+          </li>
+          <li>mdn_. (Year). <strong>Styling web forms [Web Resource]</strong>. Retrieved from <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms">https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms</a>
+          </li>
+        </ul>
+      </section>
+
+    </section>
   </section>
-  <!-- // COMBINED ELEMENTS SECTION -->
-
-
-  <!-- BASIC BRANDING IDEAS // -->
-  <section id="branding">
-    <h5>Basic Branding Ideas</h5>
-
-    <section class="element">
-      <h3>What does the company do, or offer?</h3>
-      <p>
-        The company offers photography services, including portrait photography and events photography.
-        Additionally, the company sells printed photos of its work.
-      </p>
-    </section>
-
-    <section class="element">
-      <h3>Who is the company to potential customers? (as a person)</h3>
-      <p>
-        As a person, the company is a professional photographer dedicated to offer high-quality services to clients.
-        Our clients are individuals looking for high-quality photography services. They want a skilled professional to
-        provide exceptional work.
-      </p>
-    </section>
-
-    <section class="element">
-      <h3>Why might this company entice someone to purchase a product or service?</h3>
-      <p>
-        This company is committed to provide tailored professional photography services to meet all of their client's
-        needs.
-        The availibility of printed photos also allows clients to own and cherish their captured moments.
-      </p>
-    </section>
-
-  </section>
-  <!-- BASIC BRANDING IDEAS // -->
-
-
-  <!-- Brand Components // -->
-  <section id="brand-components">
-    <h5>Brand Components</h5>
-
-    <section class="element">
-      <h3>Fonts</h3>
-
-      <h1>Heading 1 - Roboto Bold</h1>
-      <h1>Capture Moments with Excellence</h1>
-
-      <h2>Heading 2 - Roboto Medium</h2>
-      <h2>Explore Our Diverse Services</h2>
-
-      <h3>Heading 3 - Roboto Regular</h3>
-      <h3>Embark on a journey with us. Learn about our mission and values, built on principles of transparency,
-        integrity, and unwavering customer satisfaction.</h3>
-
-      <h4>Heading 4 - Roboto Medium</h4>
-      <h4>Contact us today and let's turn your ideas into captivating visuals. We eagerly anticipate the opportunity to
-        collaborate and bring your visions to life.</h4>
-
-    </section>
-
-    <section class="element">
-      <h3>Colour Palettes</h3>
-      <p>
-        A combination of dark colours, complemented by accents of white for an overall modern and clean professional
-        theme.
-      </p>
-
-      <img src="img/colour.png" alt="The colour.">
-      <h4>HEX: 000000 (RGB: 0, 0, 0)</h4>
-      <h4>HEX: 150050 (RGB: 21, 0, 80)</h4>
-      <h4>HEX: 3F0071 (RGB: 63, 0, 113)</h4>
-      <h4>HEX: 610094 (RGB: 97, 0, 148)</h4>
-    </section>
-
-
-    <section class="element">
-      <h3>Potential imagery, and, or, art direction</h3>
-      <p>
-        The imagery on the webpage will showcase a portfolio for the offered services, highlighting the company's range
-        of creative expertise.
-      </p>
-
-      <figure>
-        <img src="img/club1.jpg" alt="An events shot.">
-        <figcaption>Dynamic Atmosphere</figcaption>
-      </figure>
-
-      <figure>
-        <img src="img/club2.jpg" alt="An events shot.">
-        <figcaption>Energetic Crowd</figcaption>
-      </figure>
-
-      <figure>
-        <img src="img/club3.jpg" alt="An events shot.">
-        <figcaption>Excitement Unleashed</figcaption>
-      </figure>
-
-      <figure>
-        <img src="img/club4.jpg" alt="An events shot.">
-        <figcaption>Lively Moments</figcaption>
-      </figure>
-
-    </section>
-
-
-  </section>
-  <!-- BASIC BRANDING IDEAS // -->
-
-  <section id="citations">
-
-    <h5>Citations</h5>
-    <section class="element">
-      <h4>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a
-          href="Your_URL_here">Your_URL_here</a></h4>
-
-      <ul>
-        <li>Christian Robertson. Designer. (Year). <strong>Roboto Font [Font]</strong>. Retrieved from <a
-            href="https://fonts.google.com/specimen/Roboto">https://fonts.google.com/specimen/Roboto</a>
-        </li>
-        <li>Martin Lopez. Photographer. 2019. <strong>Women Taking Photo [Image]</strong>. Retrieved from <a
-            href="https://www.pexels.com/photo/women-taking-photo-2240763/">https://www.pexels.com/photo/women-taking-photo-2240763/</a>
-        </li>
-        <li>Caroline Cagnin. Photographer. 2018. <strong>Red and Blue Led Signage Turned on [Image]</strong>. Retrieved
-          from <a
-            href="https://www.pexels.com/photo/red-and-blue-led-signage-turned-on-1860668/">https://www.pexels.com/photo/red-and-blue-led-signage-turned-on-1860668/</a>
-        </li>
-        <li>Nicholas Derio Palacios. Photographer. 2023. <strong>Female DJ in a Pink Light [Image]</strong>. Retrieved
-          from <a
-            href="https://www.pexels.com/photo/female-dj-in-a-pink-light-19556998/">https://www.pexels.com/photo/female-dj-in-a-pink-light-19556998/</a>
-        </li>
-        <li>Yuri Manei. Photographer. 2019. <strong>Women's White Framed Sunglasses [Image]</strong>. Retrieved from <a
-            href="https://www.pexels.com/photo/women-s-white-framed-sunglasses-2690323/">https://www.pexels.com/photo/women-s-white-framed-sunglasses-2690323/</a>
-        </li>
-        <li>Wendy Wei. Photographer. 2018. <strong>Purple Fireworks Effect [Image]</strong>. Retrieved from <a
-            href="https://www.pexels.com/photo/purple-fireworks-effect-1190298/">https://www.pexels.com/photo/purple-fireworks-effect-1190298/</a>
-        </li>
-        <li>Joni Bologna. (Year). <strong>Flexbox Cheatsheet [Web Resource]</strong>. Retrieved from <a
-            href="http://jonibologna.com/flexbox-cheatsheet/">http://jonibologna.com/flexbox-cheatsheet/</a>
-        </li>
-        <li>W3Schools. 2014. <strong>CSS Tutorial [Web Resource]</strong>. Retrieved from <a
-            href="https://www.w3schools.com/css/">https://www.w3schools.com/css/</a>
-        </li>
-        <li>mdn_. (Year). <strong>Styling web forms [Web Resource]</strong>. Retrieved from <a
-            href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms">https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms</a>
-        </li>
-      </ul>
-    </section>
-
-  </section>
-
 
 </body>
 
